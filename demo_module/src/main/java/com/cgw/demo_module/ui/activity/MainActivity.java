@@ -22,12 +22,12 @@ public class MainActivity extends BaseActivity {
     DecimalScaleRulerView mWeightRulerView;
     TextView mWeightValueTwo;
 
-    private float mHeight = 170;
+    private float mHeight = 160;
     private float mMaxHeight = 220;
     private float mMinHeight = 100;
 
 
-    private float mWeight = 60.0f;
+    private float mWeight = 65.0f;
     private float mMaxWeight = 200;
     private float mMinWeight = 25;
 
