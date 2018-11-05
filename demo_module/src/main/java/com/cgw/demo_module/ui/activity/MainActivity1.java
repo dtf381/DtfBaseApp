@@ -14,7 +14,7 @@ import com.cgw.demo_module.utils.DrawUtil;
  * @Author: DongTengFei
  * @CreateDate: 2018/11/4 0004 下午 18:57
  */
-public class MainActivity extends BaseActivity {
+public class MainActivity1 extends BaseActivity {
     ScaleRulerView mHeightWheelView;
     TextView mHeightValue;
     ScaleRulerView mWeightWheelView;
@@ -52,7 +52,7 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.btn_choose_result).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ToastUtils.showToast(MainActivity.this, "选择身高： " + mHeight + " 体重： " + mWeight);
+                ToastUtils.showToast(MainActivity1.this, "选择身高： " + mHeight + " 体重： " + mWeight);
             }
         });
 

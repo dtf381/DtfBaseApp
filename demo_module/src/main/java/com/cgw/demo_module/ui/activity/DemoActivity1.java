@@ -9,7 +9,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.cgw.base_module.utils.ToastUtils;
-import com.cgw.demo_module.mode.adapter.TimeAxisAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +34,7 @@ public class DemoActivity1 extends ListActivity {
         names.add("身高体重尺子效果");
         names.add("纵向时光轴");
         names.add("Android表格控件");
+        names.add("Android表格控件1");
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
         setListAdapter(arrayAdapter);
     }
@@ -45,7 +45,7 @@ public class DemoActivity1 extends ListActivity {
         switch (position) {
             case 0://身高体重尺子效果
                 ToastUtils.showToast(DemoActivity1.this, "0");
-                startActivity(new Intent(DemoActivity1.this, MainActivity.class));
+                startActivity(new Intent(DemoActivity1.this, MainActivity1.class));
                 break;
             case 1://纵向时光轴
                 ToastUtils.showToast(DemoActivity1.this, "1");
@@ -54,6 +54,10 @@ public class DemoActivity1 extends ListActivity {
             case 2://Android表格控件
                 ToastUtils.showToast(DemoActivity1.this, "2");
                 startActivity(new Intent(DemoActivity1.this, BMIMainActivity.class));
+                break;
+            case 3://Android表格控件2
+                ToastUtils.showToast(DemoActivity1.this, "3");
+                startActivity(new Intent(DemoActivity1.this, TabView.class));
                 break;
             default:
                 break;
